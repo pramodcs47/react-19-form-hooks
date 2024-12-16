@@ -2,7 +2,7 @@ import { addUserToRole } from "../actions";
 import { useActionState } from "react";
 
 export function AddToRole() {
-    const [message, formAction, isPending] = useActionState(
+    const [formState, formAction, isPending] = useActionState(
         addUserToRole,
         null
     );
@@ -30,10 +30,20 @@ export function AddToRole() {
                     Add +
                 </button>
             </form>
-            {(isPending || message) && (
-                <p className="my-3 w-64 p-2 bg-gray-300 rounded-sm">
-                    {isPending ? "Loading..." : message}
+            {isPending ? (
+                <p className="bg-gray-300 my-3 w-64 p-2 rounded-sm">
+                    Loading...
                 </p>
+            ) : formState?.success ? (
+                <p className="bg-green-700 text-white my-3 w-64 p-2 rounded-sm">
+                    {formState?.message}
+                </p>
+            ) : (
+                formState?.success === false && (
+                    <p className="bg-red-700 text-white my-3 w-64 p-2 rounded-sm">
+                        Failed to add user: {formState?.message}
+                    </p>
+                )
             )}
         </div>
     );
