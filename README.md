@@ -1,4 +1,4 @@
-# Code in React 19
+# React 19 useFormStatus Hook
 
 As React 19 is new, this scaffolding project is for everyone who wants to start coding in React 19.
 
@@ -7,6 +7,10 @@ It has:
 - Vite
 - React 19.0.0
 - TailwindCSS
+
+Learn about this awesome hook to avoid mistakes.
+
+- Check out this video: https://www.youtube.com/watch?v=AXGRPUl_3Ts
 
 ## Run it Locally
 
