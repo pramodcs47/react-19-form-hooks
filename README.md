@@ -1,6 +1,6 @@
-# React 19 Form Hooks
+# React 19 useActionState Hook
 
-As React 19 is new, let us start exploring its features. This source code repository contains code to demonstrate the form hooks included in React 19.
+As React 19 is new, let us start exploring its features. This source code repository contains code to demonstrate the useActionState hook included in React 19.
 
 > [Check out the video lesson of the Hook useActionState](https://youtu.be/PWFKgdGmhxg)
 
