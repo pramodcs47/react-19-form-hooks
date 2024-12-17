@@ -2,12 +2,8 @@
 
 As React 19 is new, let us start exploring its features. This source code repository contains code to demonstrate the form hooks included in React 19.
 
-> [Check out the video lesson](https://youtu.be/PWFKgdGmhxg)
+> [Check out the video lesson of the Hook useActionState](https://youtu.be/PWFKgdGmhxg)
 
-It has:
-
-- [The Source Code for useFormStatus](https://github.com/tapascript/react-19-form-hooks/tree/01-use-form-status)
-- [The Source Code for useActionState](https://github.com/tapascript/react-19-form-hooks/tree/02-use-action-state)
 
 ## Run it Locally
 
