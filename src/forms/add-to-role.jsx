@@ -1,9 +1,10 @@
 import { addUserToRole } from "../actions";
 import { useActionState } from "react";
 
-export function AddToRole() {
+export function AddToRole({userId}) {
+    const updateUserWithId = addUserToRole.bind(null, userId);
     const [formState, formAction, isPending] = useActionState(
-        addUserToRole,
+        updateUserWithId,
         null
     );
 

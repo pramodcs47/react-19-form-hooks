@@ -1,9 +1,11 @@
 "use server";
 import { isUserFoundInRole, addUser } from "../lib/user";
 
-export async function addUserToRole(prevState, formData) {
+export async function addUserToRole(userId, prevState, formData) {
     const userName = formData.get("userName");
     const role = formData.get("role");
+
+    console.log(userId)
 
     if (isUserFoundInRole(userName, role)) {
         await new Promise((resolve) => {
